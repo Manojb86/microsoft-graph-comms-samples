@@ -4,9 +4,9 @@
     <Instances count="1" />
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=$storage$;AccountKey=$storageKey$" />
-      <Setting name="ServiceDnsName" value="businesssystems.cloud" />
+      <Setting name="ServiceDnsName" value="bslpolicyrecordingservice.cloudapp.net" />
       <!-- xyz.cloudapp.net-->
-      <Setting name="ServiceCNAME" value="bslpolicyrecordingservice.cloudapp.net" />
+      <Setting name="ServiceCNAME" value="teamsbot.businesssystems.cloud" />
       <!-- CNAME pointing to the .cloudapp.net if available.-->
       <Setting name="DefaultCertificate" value="C2E68367980A52147056D4055F2D51D63016B121" />
       <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="" />
