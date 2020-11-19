@@ -49,7 +49,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PublishProfile Include="Profiles\policyrecordingserviceProduction2.azurePubxml" />
     <PublishProfile Include="Profiles\SampleGraphBotProduction1.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
