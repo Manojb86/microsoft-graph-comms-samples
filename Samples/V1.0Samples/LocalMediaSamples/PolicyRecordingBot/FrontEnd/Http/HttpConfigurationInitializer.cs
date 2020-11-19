@@ -36,8 +36,7 @@ namespace Sample.PolicyRecordingBot.FrontEnd.Http
             // TODO: Provide serializer settings hooks
             // httpConfig.Formatters.JsonFormatter.SerializerSettings = RealTimeMediaSerializer.GetSerializerSettings();
             httpConfig.DependencyResolver.BeginScope();
-
-            // httpConfig.EnsureInitialized();
+            //httpConfig.EnsureInitialized();
 
             // Use the HTTP configuration initialized above
             app.UseWebApi(httpConfig);
