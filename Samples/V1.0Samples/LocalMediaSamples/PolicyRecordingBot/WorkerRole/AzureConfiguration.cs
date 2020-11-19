@@ -101,7 +101,7 @@ namespace Sample.PolicyRecordingBot.WorkerRole
         /// in .csdef. This is needed for running in emulator. Currently only messaging can be debugged in the emulator.
         /// Media debugging in emulator will be supported in future releases.
         /// </summary>
-        private const int DefaultPort = 9442;
+        private const int DefaultPort = 9441;
 
         /// <summary>
         /// Graph logger.
@@ -177,7 +177,7 @@ namespace Sample.PolicyRecordingBot.WorkerRole
 
             int instanceCallControlPublicPort = RoleEnvironment.IsEmulated ? DefaultPort : instanceCallControlEndpoint.PublicIPEndpoint.Port;
             int mediaInstanceInternalPort = RoleEnvironment.IsEmulated ? 8445 : mediaControlEndpoint.IPEndpoint.Port;
-            int mediaInstancePublicPort = RoleEnvironment.IsEmulated ? 18813 : mediaControlEndpoint.PublicIPEndpoint.Port;
+            int mediaInstancePublicPort = RoleEnvironment.IsEmulated ? 13016 : mediaControlEndpoint.PublicIPEndpoint.Port;
 
             string instanceCallControlIpEndpoint = string.Format("{0}:{1}", instanceCallControlInternalIpAddress, instanceCallControlInternalPort);
 
@@ -232,7 +232,7 @@ namespace Sample.PolicyRecordingBot.WorkerRole
                 ? IPAddress.Any
                 : this.GetInstancePublicIpAddress(this.ServiceDnsName);
 
-            string serviceFqdn = RoleEnvironment.IsEmulated ? "2.tcp.ngrok.io" : this.ServiceCname;
+            string serviceFqdn = RoleEnvironment.IsEmulated ? "0.ngrok.skype-graph-test.net" : this.ServiceCname;
 
             this.MediaPlatformSettings = new MediaPlatformSettings()
             {

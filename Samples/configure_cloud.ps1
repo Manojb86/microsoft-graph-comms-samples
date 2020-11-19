@@ -142,7 +142,7 @@ foreach($file in $FilesToReplace)
     Copy-Item $backupFile -Destination $file.FullName
     ReplaceInFile $file "%ServiceDns%" $ServiceDns
     ReplaceInFile $file "%CName%" $CName
-    ReplaceInFile $file "D3058B11E65514D0DF9B016E4ECE7184AC05723F" $CertThumbprint
+    ReplaceInFile $file "ABC0000000000000000000000000000000000CBA" $CertThumbprint
     ReplaceInFile $file "%BotName%" $BotName
     ReplaceInFile $file "%BotNameLower%" $BotName.ToLower()
     ReplaceInFile $file "%AppId%" $AppId
